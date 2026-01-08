@@ -310,5 +310,17 @@
         "comment": "Расширяемся, друзья",
         "photoUrl": "data/images/msk_reu_2.jpg",
         "date": "2026-01-07"
+    },
+    {
+        "id": 27,
+        "type": "other",
+        "name": "Сириус, образовательный центр",
+        "city": "Сириус",
+        "country": "Россия",
+        "lat": 43.400629,
+        "lng": 39.964614,
+        "comment": "Расширение территории в Сириусе",
+        "photoUrl": "data/images/sirius_1.jpg",
+        "date": "2026-01-05"
     }
 ]
