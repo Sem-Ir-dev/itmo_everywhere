@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ИТМО >EVERYWHERE</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section class="hero" id="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-logo">
+                    <img class="logo-itmo glitch-text" src="img/logo.png"></img>
+                    <span class="logo-expansion">>EVERYWHERE</span>
+                </div>
+                <div class="floating-hand-container">
+                    <img src="img/hand.png" alt="Студенческий билет ИТМО" class="floating-hand">
+                    <div class="id-card-glow"></div>
+                </div>
+                <p class="hero-subtitle">Фотографируем студак. Захватываем вузы. Расширяем границы.</p>
+                
+                <div class="stats-container">
+                    <div class="stat-card">
+                        <div class="stat-number" id="universities-count">0</div>
+                        <div class="stat-label">захвачено ВУЗов</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" id="cities-count">0</div>
+                        <div class="stat-label">городов</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" id="countries-count">0</div>
+                        <div class="stat-label">стран</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" id="photos-count">0</div>
+                        <div class="stat-label">всего фото</div>
+                    </div>
+                </div>
+                
+                <a href="#expansion-map-section" class="btn" id="show-map-btn">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <span>Показать карту</span>
+                </a>
+
+                <a href="gallery.html" class="btn">
+                    <i class="fas fa-image"></i>
+                    <span>Галерея</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Блок Процесс захвата мира -->
+    <section class="process section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Процесс захвата мира</h2>
+                <p class="section-subtitle">Мы не остановимся, пока все университеты мира не станут частью ИТМО</p>
+            </div>
+            
+            <div class="progress-container">
+                <div class="progress-card">
+                    <div class="progress-header">
+                        <h3 class="progress-title">Россия</h3>
+                        <div class="progress-percentage" id="russia-percent">0%</div>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill russia-progress" id="russia-progress"></div>
+                    </div>
+                    <p class="progress-description">
+                        В России - 1150 ВУЗов. На данный момент захвачено 
+                        <span class="highlight" id="russia-count">0</span> ВУЗов по России.
+                    </p>
+                </div>
+                
+                <div class="progress-card">
+                    <div class="progress-header">
+                        <h3 class="progress-title">Санкт-Петербург</h3>
+                        <div class="progress-percentage" id="spb-percent">0%</div>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill spb-progress" id="spb-progress"></div>
+                    </div>
+                    <p class="progress-description">
+                        В Санкт-Петербурге - 72 ВУЗа. На данный момент захвачено 
+                        <span class="highlight" id="spb-count">0</span> ВУЗов.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Карта экспансии -->
+    <section class="map-section section" id="expansion-map-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Карта экспансии</h2>
+                <p class="section-subtitle">Каждая точка - захваченный университет. Нажмите на маркер для деталей</p>
+            </div>
+            
+            <div class="map-container">
+                <div class="map-legend">
+                    <h4 class="legend-title">Легенда карты</h4>
+                    <div class="legend-item">
+                        <div class="legend-color"></div>
+                        <span class="legend-text">Захваченный университет</span>
+                    </div>
+                    <div class="legend-stats">
+                        <div class="legend-stat">
+                            <span class="legend-stat-label">Всего захвачено:</span>
+                            <span class="legend-stat-value" id="map-universities-count">0</span>
+                        </div>
+                        <div class="legend-stat">
+                            <span class="legend-stat-label">Последний захват:</span>
+                            <span class="legend-stat-value" id="last-capture">-</span>
+                        </div>
+                    </div>
+                </div>
+                <div id="expansion-map"></div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Блок Как присоединиться? -->
+    <section class="join section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Как присоединиться?</h2>
+                <p class="section-subtitle">Стань частью глобальной экспансии ИТМО всего в три шага</p>
+            </div>
+            
+            <div class="join-content">
+                <div class="join-steps">
+                    <div class="step">
+                        <div class="step-number">01</div>
+                        <div class="step-content">
+                            <h3 class="step-title">Сделай фото со студаком ИТМО</h3>
+                            <p class="step-description">Найди другой университет и сфотографируй свой студенческий билет ИТМО на его фоне.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">02</div>
+                        <div class="step-content">
+                            <h3 class="step-title">Заполни Google Form с данными о захвате</h3>
+                            <p class="step-description">Укажи название университета, город и загрузи свое фото. Можно добавить комментарий о "захвате".</p>
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">03</div>
+                        <div class="step-content">
+                            <h3 class="step-title">Точка появится на карте после проверки</h3>
+                            <p class="step-description">После проверки я добавлю точку на карту.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="qr-container">
+                    <h3 class="qr-title">Добавить новый захват</h3>
+                    <p class="qr-description">Отсканируйте QR-код, чтобы перейти к форме добавления нового захваченного университета</p>
+                    
+                    <img src="img/qr-code.png" class="qr-code">
+                    
+                    <a href="https://forms.gle/ViqEjkWzRiBjSrwK9" class="btn" target="_blank">
+                        <i class="fas fa-external-link-alt"></i>
+                        <span>Или перейдите по ссылке</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">ИТМО >EVERYWHERE</div>
+                    <p class="footer-description">Все "захваты" осуществлены в шуточном формате. Мы уважаем все университеты и их студентов. Проект создан студентом и не является официальным проектом Университета ИТМО.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Навигация</h4>
+                        <ul>
+                            <li><a href="#">Статистика</a></li>
+                            <li><a href="gallery.html">Галерея</a></li>
+                            <li><a href="#expansion-map-section">Карта</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="copyright">
+                    © 2026 Сделано с ❤️ в Питере. Все права на расширение защищены.
+                </div>
+                
+                <div class="social-links">
+                    <a href="https://github.com/Sem-Ir-dev/" class="social-link" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/map.js"></script>
+</body>
+</html>

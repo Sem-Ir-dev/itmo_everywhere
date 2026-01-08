@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галерея | ИТМО >EVERYWHERE</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/gallery.css">
+</head>
+<body class="gallery-page">
+    <nav class="gallery-nav">
+        <div class="container">
+            <div class="nav-content">
+                <a href="index.html" class="nav-back">
+                    <i class="fas fa-arrow-left"></i>
+                    <span>Главная</span>
+                </a>
+                <div class="nav-logo">ГАЛЕРЕЯ</div>
+                <div class="nav-stats">
+                    <span id="total-photos">0</span> фото
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <main class="gallery-main">
+        <div class="container">
+            <div class="gallery-header">
+                <h1 class="gallery-title">Архив фотографий захватов</h1>
+                <p class="gallery-subtitle">Каждая фотография — доказательство расширения территории ИТМО. Сортировка по дате захвата.</p>
+                
+                <div class="gallery-controls">
+                    <div class="filter-controls">
+                        <button class="filter-btn active" data-filter="all">Все</button>
+                        <button class="filter-btn" data-filter="russia">Россия</button>
+                        <button class="filter-btn" data-filter="spb">Санкт-Петербург</button>
+                        <button class="filter-btn" data-filter="msk">Москва</button>
+                        <button class="filter-btn" data-filter="world">Мир</button>
+                    </div>
+                    
+                    <div class="search-controls">
+                        <div class="search-box">
+                            <i class="fas fa-search"></i>
+                            <input type="text" id="search-input" placeholder="Поиск по университету или городу...">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="gallery-grid" id="gallery-grid">
+                <!-- Фотографии будут загружаться здесь -->
+                <div class="loading-spinner">
+                    <div class="spinner"></div>
+                    <p>Загружаем архив захватов...</p>
+                </div>
+            </div>
+            
+            <div class="gallery-stats">
+                <div class="stats-card">
+                    <div class="stats-icon">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <div class="stats-content">
+                        <div class="stats-number" id="stats-universities">0</div>
+                        <div class="stats-label">университетов</div>
+                    </div>
+                </div>
+                
+                <div class="stats-card">
+                    <div class="stats-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="stats-content">
+                        <div class="stats-number" id="stats-cities">0</div>
+                        <div class="stats-label">городов</div>
+                    </div>
+                </div>
+                
+                <div class="stats-card">
+                    <div class="stats-icon">
+                        <i class="fas fa-globe-europe"></i>
+                    </div>
+                    <div class="stats-content">
+                        <div class="stats-number" id="stats-countries">0</div>
+                        <div class="stats-label">стран</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <!-- Модальное окно для просмотра фото -->
+    <div class="modal-overlay" id="image-modal">
+        <div class="modal-container">
+            <button class="modal-close" id="modal-close">
+                <i class="fas fa-times"></i>
+            </button>
+            
+            <div class="modal-content">
+                <div class="modal-image-container">
+                    <img id="modal-image" src="" alt="">
+                    <div class="image-nav">
+                        <button class="nav-btn prev-btn" id="prev-btn">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="nav-btn next-btn" id="next-btn">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="modal-info">
+                    <div class="info-header">
+                        <h2 id="modal-university">Название университета</h2>
+                        <div class="university-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span id="modal-location">Город, Страна</span>
+                        </div>
+                    </div>
+                    
+                    <div class="info-content">
+                        <div class="info-item">
+                            <div class="info-label">Дата захвата</div>
+                            <div class="info-value" id="modal-date">-</div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <div class="info-label">ID захвата</div>
+                            <div class="info-value" id="modal-id">-</div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <div class="info-label">Комментарий</div>
+                            <div class="info-value" id="modal-comment">-</div>
+                        </div>
+                    </div>
+                    
+                    <div class="info-actions">
+                        <button class="action-btn" id="download-btn">
+                            <i class="fas fa-download"></i>
+                            <span>Скачать фото</span>
+                        </button>
+                        <button class="action-btn" id="share-btn">
+                            <i class="fas fa-share-alt"></i>
+                            <span>Поделиться</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">ИТМО >EVERYWHERE</div>
+                    <p class="footer-description">Все "захваты" осуществлены в шуточном формате. Мы уважаем все университеты и их студентов. Проект создан студентом и не является официальным проектом Университета ИТМО.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Навигация</h4>
+                        <ul>
+                            <li><a href="index.html">Главная страница</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="copyright">
+                    © 2026 Сделано с ❤️ в Питере. Все права на расширение защищены.
+                </div>
+                
+                <div class="social-links">
+                    <a href="https://github.com/Sem-Ir-dev/" class="social-link" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="js/gallery.js"></script>
+</body>
+</html>
