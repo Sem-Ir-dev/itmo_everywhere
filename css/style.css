@@ -604,7 +604,7 @@ h1, h2, h3, h4 {
     margin-bottom: 15px;
 }
 
-.footer-description {
+.footer-description, #license_link {
     color: var(--text-secondary);
     max-width: 400px;
     line-height: 1.7;
