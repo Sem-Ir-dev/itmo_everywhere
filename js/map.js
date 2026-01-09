@@ -82,3 +82,18 @@ function createPopupContent(university) {
         </div>
     `;
 }
+
+// Много маркеров могут тормозить, решил добавить кластеризацию
+const markers = L.markerClusterGroup({
+    maxClusterRadius: 70,
+    spiderfyOnMaxZoom: false
+});
+
+// В условиях высокой нагрузки, отключаю тяжелые функции
+const highLoadMode = performance.memory.usedJSHeapSize > 500000000;
+
+if (highLoadMode) {
+    disableAnimations();
+    simplifyMap();
+    loadMinimalData();
+}

@@ -1,0 +1,66 @@
+# robots.txt - ITMO Everywhere
+# Это неофициальный проект, не является разработкой университета
+
+User-agent: *
+Allow: /
+
+# Запретить сканирование несуществующих папок
+Disallow: /wp-admin/
+Disallow: /wp-content/
+Disallow: /wp-includes/
+Disallow: /administrator/
+Disallow: /cache/
+Disallow: /tmp/
+Disallow: /admin/
+Disallow: /api/
+Disallow: /backup/
+Disallow: /config/
+Disallow: /database/
+Disallow: /logs/
+Disallow: /private/
+Disallow: /secret/
+Disallow: /upload/
+
+# Скрываю технические файлы
+Disallow: /.git/
+Disallow: /.github/
+Disallow: /node_modules/
+Disallow: /package.json
+Disallow: /package-lock.json
+Disallow: /README.md
+Disallow: /LICENSE
+
+# Уважайте наш сервер - не сканируйте слишком часто
+Crawl-delay: 1
+
+# Для дружественных ботов
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: YandexBot
+Allow: /
+Crawl-delay: 2
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 2
+
+# Изображения
+User-agent: Googlebot-Image
+Allow: /
+Disallow: /*.gif$
+
+# Плохие боты
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: AhrefsBot
+Crawl-delay: 5
+
+User-agent: SemrushBot
+Disallow: /
+Crawl-delay: 10
+
+User-agent: DotBot
+Disallow: /
