@@ -7,7 +7,8 @@ let statistics = {
     russiaUniversities: 0,
     spbUniversities: 0,
     russiaPercent: 0,
-    spbPercent: 0
+    spbPercent: 0,
+    mskPercent: 0
 };
 
 // Инициализация при загрузке страницы
@@ -20,6 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Проценты будут установлены после загрузки данных
         animateProgressBar('russia-progress', 'russia-percent', 0);
         animateProgressBar('spb-progress', 'spb-percent', 0);
+        animateProgressBar('msk-progress', 'msk-percent', 0);
     }, 800);
     
     // Обработка кнопки "Показать карту"
@@ -117,7 +119,8 @@ function updateStatistics() {
         russiaUniversities: 0,
         spbUniversities: 0,
         russiaPercent: 0,
-        spbPercent: 0
+        spbPercent: 0,
+        mskPercent: 0
     };
     
     // Общее количество фотографий
@@ -147,13 +150,20 @@ function updateStatistics() {
     const spbUniversityEntries = universityEntries.filter(item => item.city === "Санкт-Петербург");
     const uniqueSpbUniversities = [...new Set(spbUniversityEntries.map(item => item.name))];
     statistics.spbUniversities = uniqueSpbUniversities.length;
+
+    // Университеты в Москве
+    const mskUniversityEntries = universityEntries.filter(item => item.city === "Москва");
+    const uniqueMskUniversities = [...new Set(mskUniversityEntries.map(item => item.name))];
+    statistics.mskUniversities = uniqueMskUniversities.length;
     
     // Проценты (1150 вузов в России, 72 вуза в СПб)
     const totalRussiaUniversities = 1150;
     const totalSpbUniversities = 72;
+    const totalMskUniversities = 159;
     
     statistics.russiaPercent = Math.min(100, Math.round((statistics.russiaUniversities / totalRussiaUniversities) * 100));
     statistics.spbPercent = Math.min(100, Math.round((statistics.spbUniversities / totalSpbUniversities) * 100));
+    statistics.mskPercent = Math.min(100, Math.round((statistics.mskUniversities / totalMskUniversities) * 100));
     
     // Обновляем интерфейс
     updateUIStatistics();
@@ -162,6 +172,7 @@ function updateStatistics() {
     setTimeout(() => {
         animateProgressBar('russia-progress', 'russia-percent', statistics.russiaPercent);
         animateProgressBar('spb-progress', 'spb-percent', statistics.spbPercent);
+        animateProgressBar('msk-progress', 'msk-percent', statistics.mskPercent);
     }, 100);
 }
 
@@ -178,6 +189,8 @@ function updateUIStatistics() {
     document.getElementById('russia-count').textContent = statistics.russiaUniversities;
     document.getElementById('spb-percent').textContent = statistics.spbPercent + '%';
     document.getElementById('spb-count').textContent = statistics.spbUniversities;
+    document.getElementById('msk-percent').textContent = statistics.mskPercent + '%';
+    document.getElementById('msk-count').textContent = statistics.mskUniversities;
     
     // Карта
     if (document.getElementById('map-universities-count')) {
