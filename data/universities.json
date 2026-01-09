@@ -14,13 +14,13 @@
     {
         "id": 2,
         "type": "university",
-        "name": "ВШЭ, Спб школа гуманитарных наук и искусств",
-        "city": "Санкт-Петербург",
+        "name": "ВШЭ, Покровский бульвар",
+        "city": "Москва",
         "country": "Россия",
-        "lat": 59.922893,
-        "lng": 30.303302,
+        "lat": 55.753636,
+        "lng": 37.648297,
         "comment": "вшэ сосат?",
-        "photoUrl": "data/images/spb_wshe_1.jpg",
+        "photoUrl": "data/images/msk_wshe_1.jpg",
         "date": "2025-04-07"
     },
     {
@@ -322,5 +322,17 @@
         "comment": "Расширение территории в Сириусе",
         "photoUrl": "data/images/sirius_1.jpg",
         "date": "2026-01-05"
+    },
+    {
+        "id": 28,
+        "type": "university",
+        "name": "СПБГУ, ПУНК",
+        "city": "Санкт-Петербург",
+        "country": "Россия",
+        "lat": 59.881067,
+        "lng": 29.829736,
+        "comment": "",
+        "photoUrl": "data/images/spb_spbgu_3.jpg",
+        "date": "2025-12-07"
     }
 ]
