@@ -335,4 +335,41 @@
         "photoUrl": "data/images/spb_spbgu_3.jpg",
         "date": "2025-12-07"
     }
+    ,
+    {
+        "id": 29,
+        "type": "university",
+        "name": "МГУ",
+        "city": "Москва",
+        "country": "Россия",
+        "lat": 55.702999,
+        "lng": 37.530883,
+        "comment": "Расширяемся",
+        "photoUrl": "data/images/msk_mgu_1.jpg",
+        "date": "2026-01-09"
+    },
+    {
+        "id": 30,
+        "type": "university",
+        "name": "МГТУ имени Н.Э. Баумана",
+        "city": "Москва",
+        "country": "Россия",
+        "lat": 55.765751,
+        "lng": 37.685672,
+        "comment": "",
+        "photoUrl": "data/images/msk_mgtu_2.jpg",
+        "date": "2026-01-09"
+    },
+    {
+        "id": 31,
+        "type": "university",
+        "name": "МГТУ имени Н.Э. Баумана",
+        "city": "Москва",
+        "country": "Россия",
+        "lat": 55.765751,
+        "lng": 37.685672,
+        "comment": "",
+        "photoUrl": "data/images/msk_mgtu_3.jpg",
+        "date": "2026-01-09"
+    }
 ]
