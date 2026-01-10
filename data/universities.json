@@ -383,5 +383,17 @@
         "comment": "родная уфа ммм",
         "photoUrl": "data/images/ufa_uunit_1.jpg",
         "date": "2026-01-10"
+    },
+    {
+        "id": 33,
+        "type": "university",
+        "name": "Уральский федеральный университет (УрФУ)",
+        "city": "Екатеринбург",
+        "country": "Россия",
+        "lat": 56.844014,
+        "lng": 60.653987,
+        "comment": "",
+        "photoUrl": "data/images/ektr_urfu_1.jpg",
+        "date": "2026-01-10"
     }
 ]
