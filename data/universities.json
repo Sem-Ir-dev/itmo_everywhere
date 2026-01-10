@@ -371,5 +371,17 @@
         "comment": "",
         "photoUrl": "data/images/msk_mgtu_3.jpg",
         "date": "2026-01-09"
+    },
+    {
+        "id": 32,
+        "type": "university",
+        "name": "УУНиТ",
+        "city": "Уфа",
+        "country": "Россия",
+        "lat": 54.720791,
+        "lng": 55.933456,
+        "comment": "родная уфа ммм",
+        "photoUrl": "data/images/ufa_uunit_1.jpg",
+        "date": "2026-01-10"
     }
 ]
