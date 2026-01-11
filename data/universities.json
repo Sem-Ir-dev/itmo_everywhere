@@ -407,5 +407,17 @@
         "comment": "Продолжаем расширение, друзья🫡",
         "photoUrl": "data/images/msk_mifi_2.jpg",
         "date": "2026-01-11"
+    },
+    {
+        "id": 35,
+        "type": "university",
+        "name": "Российская таможенная академия",
+        "city": "Санкт-Петербург",
+        "country": "Россия",
+        "lat": 59.865528,
+        "lng": 30.417517,
+        "comment": "Теперь границы под нашим контролем",
+        "photoUrl": "data/images/spb_rta_1.jpg",
+        "date": "2026-01-12"
     }
 ]
