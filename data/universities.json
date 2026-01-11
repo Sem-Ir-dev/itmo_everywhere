@@ -395,5 +395,17 @@
         "comment": "",
         "photoUrl": "data/images/ektr_urfu_1.jpg",
         "date": "2026-01-10"
+    },
+    {
+        "id": 34,
+        "type": "university",
+        "name": "МИФИ",
+        "city": "Москва",
+        "country": "Россия",
+        "lat": 55.651091,
+        "lng": 37.665880,
+        "comment": "Продолжаем расширение, друзья🫡",
+        "photoUrl": "data/images/msk_mifi_2.jpg",
+        "date": "2026-01-11"
     }
 ]
