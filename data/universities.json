@@ -419,5 +419,17 @@
         "comment": "Теперь границы под нашим контролем",
         "photoUrl": "data/images/spb_rta_1.jpg",
         "date": "2026-01-12"
+    },
+    {
+        "id": 36,
+        "type": "university",
+        "name": "ВШЭ",
+        "city": "Санкт-Петербург",
+        "country": "Россия",
+        "lat": 59.928767,
+        "lng": 30.264197,
+        "comment": "Во славу Ван Вьет Бач",
+        "photoUrl": "data/images/spb_wshe_1.jpg",
+        "date": "2026-01-17"
     }
 ]
