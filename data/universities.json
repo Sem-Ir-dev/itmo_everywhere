@@ -431,5 +431,17 @@
         "comment": "Во славу Ван Вьет Бач",
         "photoUrl": "data/images/spb_wshe_1.jpg",
         "date": "2026-01-17"
+    },
+    {
+        "id": 37,
+        "type": "university",
+        "name": "СПБГИК",
+        "city": "Санкт-Петербург",
+        "country": "Россия",
+        "lat": 59.946545,
+        "lng": 30.331512,
+        "comment": "ЗАХВАТ",
+        "photoUrl": "data/images/spb_spbgik_1.jpg",
+        "date": "2026-01-21"
     }
 ]
