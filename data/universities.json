@@ -443,5 +443,53 @@
         "comment": "ЗАХВАТ",
         "photoUrl": "data/images/spb_spbgik_1.jpg",
         "date": "2026-01-21"
+    },
+    {
+        "id": 38,
+        "type": "university",
+        "name": "РязГМУ им. Павлова",
+        "city": "Рязань",
+        "country": "Россия",
+        "lat": 54.621740,
+        "lng": 39.711989,
+        "comment": "",
+        "photoUrl": "data/images/rz_ryazgmu_1.jpg",
+        "date": "2026-01-28"
+    },
+    {
+        "id": 39,
+        "type": "university",
+        "name": "РГРТУ им. Уткина",
+        "city": "Рязань",
+        "country": "Россия",
+        "lat": 54.613505,
+        "lng": 39.724011,
+        "comment": "",
+        "photoUrl": "data/images/rz_rgrtu_1.jpg",
+        "date": "2026-01-28"
+    },
+    {
+        "id": 40,
+        "type": "university",
+        "name": "ВШЭ",
+        "city": "Санкт-Петербург",
+        "country": "Россия",
+        "lat": 59.980289,
+        "lng": 30.326989,
+        "comment": "Infiltrated",
+        "photoUrl": "data/images/spb_wshe_2.jpg",
+        "date": "2026-01-26"
+    },
+    {
+        "id": 41,
+        "type": "other",
+        "name": "МЧС",
+        "city": "Санкт-Петербург",
+        "country": "Россия",
+        "lat": 55.819697,
+        "lng": 37.611685,
+        "comment": "связи",
+        "photoUrl": "data/images/spb_other_4.jpg",
+        "date": "2026-01-26"
     }
 ]
