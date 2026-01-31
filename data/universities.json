@@ -491,5 +491,17 @@
         "comment": "связи",
         "photoUrl": "data/images/spb_other_4.jpg",
         "date": "2026-01-26"
+    },
+    {
+        "id": 42,
+        "type": "university",
+        "name": "БФУ им. Иммануила Канта",
+        "city": "Калининград",
+        "country": "Россия",
+        "lat": 54.724231,
+        "lng": 20.527539,
+        "comment": "",
+        "photoUrl": "data/images/kng_bfu_1.jpg",
+        "date": "2026-01-31"
     }
 ]
