@@ -5,10 +5,7 @@ function initMap(universitiesData) {
         return;
     }
     
-    // Фильтруем только университеты для отображения на карте
-    const universityEntries = universitiesData.filter(item => item.type === "university");
-    
-    if (universityEntries.length === 0) {
+    if (universitiesData.length === 0) {
         console.warn('Нет университетов для отображения на карте');
         // Создаем пустую карту с центром на России
         const map = L.map('expansion-map').setView([61.5240, 105.3188], 3);
@@ -34,12 +31,12 @@ function initMap(universitiesData) {
     }).addTo(map);
     
     // Добавление маркеров для каждого университета
-    universityEntries.forEach(university => {
+    universitiesData.forEach(university => {
         addUniversityMarker(university, map);
     });
     
     // Масштабирование карты, чтобы показать все маркеры
-    const bounds = L.latLngBounds(universityEntries.map(u => [u.lat, u.lng]));
+    const bounds = L.latLngBounds(universitiesData.map(u => [u.lat, u.lng]));
     map.fitBounds(bounds, { padding: [50, 50] });
 }
 
