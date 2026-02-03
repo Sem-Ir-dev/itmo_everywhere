@@ -503,5 +503,29 @@
         "comment": "",
         "photoUrl": "data/images/kng_bfu_1.jpg",
         "date": "2026-01-31"
+    },
+    {
+        "id": 43,
+        "type": "university",
+        "name": "БГПУ",
+        "city": "Благовещенск",
+        "country": "Россия",
+        "lat": 50.256721,
+        "lng": 127.540915,
+        "comment": "Благовещенская диаспора",
+        "photoUrl": "data/images/bgw_bgpu_1.jpg",
+        "date": "2026-02-03"
+    },
+    {
+        "id": 44,
+        "type": "university",
+        "name": "МГТУ им. Носова",
+        "city": "Магнитогорск",
+        "country": "Россия",
+        "lat": 53.422113,
+        "lng": 58.982255,
+        "comment": "Продолжаем экспансию на юг страны",
+        "photoUrl": "data/images/mgtg_mgtu_1.jpg",
+        "date": "2026-02-03"
     }
 ]
