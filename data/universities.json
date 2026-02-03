@@ -527,5 +527,17 @@
         "comment": "Продолжаем экспансию на юг страны",
         "photoUrl": "data/images/mgtg_mgtu_1.jpg",
         "date": "2026-02-03"
+    },
+    {
+        "id": 45,
+        "type": "other",
+        "name": "Колизей",
+        "city": "Рим",
+        "country": "Италия",
+        "lat": 41.890197,
+        "lng": 12.492338,
+        "comment": "Продолжаем экспансию на юг страны",
+        "photoUrl": "data/images/rim_kolizey_1.jpg",
+        "date": "2026-02-03"
     }
 ]
