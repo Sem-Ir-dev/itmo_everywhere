@@ -539,5 +539,17 @@
         "comment": "Расширяем территорию",
         "photoUrl": "data/images/rim_kolizey_1.jpg",
         "date": "2026-02-03"
+    },
+    {
+        "id": 46,
+        "type": "university",
+        "name": "МФТИ",
+        "city": "Москва",
+        "country": "Россия",
+        "lat": 55.929160,
+        "lng": 37.520592,
+        "comment": "Очередной корпус физтеха захвачен (миссисовец по приколу здесь)",
+        "photoUrl": "data/images/msk_mfti_2.jpg",
+        "date": "2026-02-05"
     }
 ]
