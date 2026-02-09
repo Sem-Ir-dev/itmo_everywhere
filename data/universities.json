@@ -551,5 +551,29 @@
         "comment": "Очередной корпус физтеха захвачен (миссисовец по приколу здесь)",
         "photoUrl": "data/images/msk_mfti_2.jpg",
         "date": "2026-02-05"
+    },
+    {
+        "id": 47,
+        "type": "university",
+        "name": "СамГМУ",
+        "city": "Самара",
+        "country": "Россия",
+        "lat": 53.201440,
+        "lng": 50.106116,
+        "comment": "Расширение территории",
+        "photoUrl": "data/images/sam_samgmu_1.jpg",
+        "date": "2026-02-09"
+    },
+    {
+        "id": 48,
+        "type": "university",
+        "name": "Сибирский Федеральный Университет",
+        "city": "Красноярск",
+        "country": "Россия",
+        "lat": 56.004124, 
+        "lng": 92.766300,
+        "comment": "сослали в сибирь",
+        "photoUrl": "data/images/krsn_sfu_1.jpg",
+        "date": "2026-02-09"
     }
 ]
