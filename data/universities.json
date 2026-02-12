@@ -575,5 +575,41 @@
         "comment": "сослали в сибирь",
         "photoUrl": "data/images/krsn_sfu_1.jpg",
         "date": "2026-02-09"
+    },
+    {
+        "id": 49,
+        "type": "university",
+        "name": "Политехнический университет Петра Великого",
+        "city": "Санкт-Петербург",
+        "country": "Россия",
+        "lat": 60.007194, 
+        "lng": 30.372921,
+        "comment": "Захват главного корпуса Политеха",
+        "photoUrl": "data/images/spb_politeh_2.jpg",
+        "date": "2026-02-10"
+    },
+    {
+        "id": 50,
+        "type": "other",
+        "name": "МГТУ имени Н.Э. Баумана",
+        "city": "Санкт-Петербург",
+        "country": "Россия",
+        "lat": 55.819697,
+        "lng": 37.611685,
+        "comment": "побратались",
+        "photoUrl": "data/images/spb_other_5.jpg",
+        "date": "2026-02-11"
+    },
+    {
+        "id": 51,
+        "type": "other",
+        "name": "Санкт-Петербург",
+        "city": "Санкт-Петербург",
+        "country": "Россия",
+        "lat": 55.819697,
+        "lng": 37.611685,
+        "comment": "расширили влияние на весь город",
+        "photoUrl": "data/images/spb_other_6.jpg",
+        "date": "2026-02-12"
     }
 ]
