@@ -611,5 +611,17 @@
         "comment": "расширили влияние на весь город",
         "photoUrl": "data/images/spb_other_6.jpg",
         "date": "2026-02-12"
+    },
+    {
+        "id": 52,
+        "type": "other",
+        "name": "Ахштырское ущелье",
+        "city": "Сочи",
+        "country": "Россия",
+        "lat": 43.522261,
+        "lng": 40.000315,
+        "comment": "",
+        "photoUrl": "data/images/sochi_other_1.jpg",
+        "date": "2026-02-14"
     }
 ]
