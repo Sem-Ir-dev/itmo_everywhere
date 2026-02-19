@@ -623,5 +623,17 @@
         "comment": "",
         "photoUrl": "data/images/sochi_other_1.jpg",
         "date": "2026-02-14"
+    },
+    {
+        "id": 53,
+        "type": "other",
+        "name": "Пекинский технологический университет",
+        "city": "Пекин",
+        "country": "Китай",
+        "lat": 43.522261,
+        "lng": 40.000315,
+        "comment": "39.871756, 116.473523",
+        "photoUrl": "data/images/pekin_ptu_1.jpeg",
+        "date": "2026-02-19"
     }
 ]
