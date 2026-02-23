@@ -635,5 +635,41 @@
         "comment": "",
         "photoUrl": "data/images/pekin_ptu_1.jpeg",
         "date": "2026-02-19"
+    },
+    {
+        "id": 54,
+        "type": "other",
+        "name": "ИТМО и Бауманка",
+        "city": "Санкт-Петербург",
+        "country": "Россия",
+        "lat": 55.819697,
+        "lng": 37.611685,
+        "comment": "Я считаю это достойно",
+        "photoUrl": "data/images/spb_other_7.jpg",
+        "date": "2026-02-23"
+    },
+    {
+        "id": 55,
+        "type": "university",
+        "name": "СпбГУПС",
+        "city": "Санкт-Петербург",
+        "country": "Россия",
+        "lat": 59.923982,
+        "lng": 30.317297,
+        "comment": "",
+        "photoUrl": "data/images/spb_spbgups_1.jpg",
+        "date": "2026-02-22"
+    },
+    {
+        "id": 56,
+        "type": "university",
+        "name": "Техническая академия Росатома",
+        "city": "Санкт-Петербург",
+        "country": "Россия",
+        "lat": 59.997023,
+        "lng": 30.296316,
+        "comment": "Захват технической академии Росатома",
+        "photoUrl": "data/images/spb_tar_1.jpg",
+        "date": "2026-02-22"
     }
 ]
