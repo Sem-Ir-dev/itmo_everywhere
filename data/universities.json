@@ -671,5 +671,29 @@
         "comment": "Захват технической академии Росатома",
         "photoUrl": "data/images/spb_tar_1.jpg",
         "date": "2026-02-22"
+    },
+    {
+        "id": 57,
+        "type": "university",
+        "name": "ВШЭ, Покровский бульвар",
+        "city": "Москва",
+        "country": "Россия",
+        "lat": 55.753636,
+        "lng": 37.648297,
+        "comment": "Расширение",
+        "photoUrl": "data/images/msk_wshe_2.jpg",
+        "date": "2026-02-27"
+    },
+    {
+        "id": 58,
+        "type": "university",
+        "name": "РГПУ им. Герцена",
+        "city": "Санкт-Петербург",
+        "country": "Россия",
+        "lat": 59.934263,
+        "lng": 30.319688,
+        "comment": "Захват Герцена",
+        "photoUrl": "data/images/spb_gercen_1.jpg",
+        "date": "2026-02-28"
     }
 ]
