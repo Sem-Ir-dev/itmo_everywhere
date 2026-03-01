@@ -695,5 +695,17 @@
         "comment": "Захват Герцена",
         "photoUrl": "data/images/spb_gercen_1.jpg",
         "date": "2026-02-28"
+    },
+    {
+        "id": 59,
+        "type": "university",
+        "name": "ВШЭ",
+        "city": "Санкт-Петербург",
+        "country": "Россия",
+        "lat": 59.979987,
+        "lng": 30.326894,
+        "comment": "",
+        "photoUrl": "data/images/spb_wshe_3.jpg",
+        "date": "2026-02-28"
     }
 ]
