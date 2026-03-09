@@ -334,8 +334,7 @@
         "comment": "",
         "photoUrl": "data/images/spb_spbgu_3.jpg",
         "date": "2025-12-07"
-    }
-    ,
+    },
     {
         "id": 29,
         "type": "university",
@@ -707,5 +706,41 @@
         "comment": "",
         "photoUrl": "data/images/spb_wshe_3.jpg",
         "date": "2026-02-28"
+    },
+    {
+        "id": 60,
+        "type": "other",
+        "name": "ИТМО и СпГМТУ",
+        "city": "Санкт-Петербург",
+        "country": "Россия",
+        "lat": 55.819697,
+        "lng": 37.611685,
+        "comment": "ЧЗХ!? ИТМОшники общаются с Корабелами!?",
+        "photoUrl": "data/images/spb_other_8.jpg",
+        "date": "2026-01-25"
+    },
+    {
+        "id": 61,
+        "type": "other",
+        "name": "Национальная библиотека Беларуси",
+        "city": "Минск",
+        "country": "Беларусь",
+        "lat": 53.931313,
+        "lng": 27.646099,
+        "comment": "Осваиваем территории",
+        "photoUrl": "data/images/minsk_library_1.jpg",
+        "date": "2026-03-02"
+    },
+    {
+        "id": 62,
+        "type": "university",
+        "name": "МГУ",
+        "city": "Москва",
+        "country": "Россия",
+        "lat": 55.702999,
+        "lng": 37.530883,
+        "comment": "мгу захвачен.",
+        "photoUrl": "data/images/msk_mgu_2.jpg",
+        "date": "2026-03-09"
     }
 ]
