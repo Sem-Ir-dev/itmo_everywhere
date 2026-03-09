@@ -742,5 +742,17 @@
         "comment": "мгу захвачен.",
         "photoUrl": "data/images/msk_mgu_2.jpg",
         "date": "2026-03-09"
+    },
+    {
+        "id": 63,
+        "type": "university",
+        "name": "МИСИС",
+        "city": "Москва",
+        "country": "Россия",
+        "lat": 55.729825,
+        "lng": 37.609731,
+        "comment": "мисис под нами",
+        "photoUrl": "data/images/msk_misis_2.jpg",
+        "date": "2025-03-09"
     }
 ]
