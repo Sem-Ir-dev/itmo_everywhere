@@ -998,17 +998,3 @@ h1, h2, h3, h4 {
 .spb-progress, .msk-progress {
     background: linear-gradient(90deg, #C1BFBC, #E0DEDB);
 }
-
-.hide {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    background-color: rgba(23, 23, 23, 0.95);
-    backdrop-filter: blur(10px);
-    border: 1px solid var(--border-color);
-    border-radius: 8px;
-    padding: 10px 155px;
-    z-index: 2000;
-    max-width: 400px;
-    max-height: 200px;
-}

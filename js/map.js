@@ -4,37 +4,39 @@ function initMap(universitiesData) {
         console.error('Нет данных для отображения на карте');
         return;
     }
-    
+
     if (universitiesData.length === 0) {
         console.warn('Нет университетов для отображения на карте');
         // Создаем пустую карту с центром на России
         const map = L.map('expansion-map').setView([61.5240, 105.3188], 3);
-        
+        map.attributionControl.setPrefix("")
+
         // Добавление темного слоя карты
         L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
-            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a> &copy; <a href="https://carto.com/attributions">CARTO</a>',
             subdomains: 'abcd',
             maxZoom: 19
         }).addTo(map);
-        
+
         return;
     }
-    
+
     // Создание карты с центром на России
     const map = L.map('expansion-map').setView([61.5240, 105.3188], 3);
-    
+    map.attributionControl.setPrefix("")
+
     // Добавление темного слоя карты
     L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
-        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a> &copy; <a href="https://carto.com/attributions">CARTO</a>',
         subdomains: 'abcd',
         maxZoom: 19
     }).addTo(map);
-    
+
     // Добавление маркеров для каждого университета
     universitiesData.forEach(university => {
         addUniversityMarker(university, map);
     });
-    
+
     // Масштабирование карты, чтобы показать все маркеры
     const bounds = L.latLngBounds(universitiesData.map(u => [u.lat, u.lng]));
     map.fitBounds(bounds, { padding: [50, 50] });
@@ -49,16 +51,16 @@ function addUniversityMarker(university, map) {
         iconSize: [28, 28],
         iconAnchor: [14, 14]
     });
-    
+
     // Создание попапа с информацией
     const popupContent = createPopupContent(university);
-    
+
     // Добавление маркера на карту
-    const marker = L.marker([university.lat, university.lng], { 
+    const marker = L.marker([university.lat, university.lng], {
         icon: customMarker,
         title: university.name
     });
-    
+
     marker.addTo(map)
         .bindPopup(popupContent);
 }
