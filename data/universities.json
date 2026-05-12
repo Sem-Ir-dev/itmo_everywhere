@@ -1186,5 +1186,89 @@
         "comment": "Расширяем территории",
         "photoUrl": "data/images/spb_spbgu_4.jpg",
         "date": "2026-04-26"
+    },
+    {
+        "id": 100,
+        "type": "university",
+        "name": "Михайловская военная артиллерийская академия",
+        "city": "Санкт-Петербург",
+        "country": "Россия",
+        "lat": 59.947849,
+        "lng": 30.348390,
+        "comment": "",
+        "photoUrl": "data/images/spb_mwaa_1.jpg",
+        "date": "2026-05-13"
+    },
+    {
+        "id": 101,
+        "type": "university",
+        "name": "Михайловская военная артиллерийская академия",
+        "city": "Санкт-Петербург",
+        "country": "Россия",
+        "lat": 59.947849,
+        "lng": 30.348390,
+        "comment": "",
+        "photoUrl": "data/images/spb_mwaa_2.jpg",
+        "date": "2026-05-13"
+    },
+    {
+        "id": 102,
+        "type": "university",
+        "name": "КУБГМУ",
+        "city": "Краснодар",
+        "country": "Россия",
+        "lat": 45.015214,
+        "lng": 38.974577,
+        "comment": "покоряем кубгму",
+        "photoUrl": "data/images/kndr_kubgmu_1.jpg",
+        "date": "2026-05-13"
+    },
+    {
+        "id": 103,
+        "type": "university",
+        "name": "СПБГУТ",
+        "city": "Санкт-Петербург",
+        "country": "Россия",
+        "lat": 59.902952,
+        "lng": 30.487917,
+        "comment": "Первый подход",
+        "photoUrl": "data/images/spb_spbgut_1.jpg",
+        "date": "2026-05-13"
+    },
+    {
+        "id": 104,
+        "type": "university",
+        "name": "Петербургский институт иудаики",
+        "city": "Санкт-Петербург",
+        "country": "Россия",
+        "lat": 59.931771,
+        "lng": 30.365237,
+        "comment": "",
+        "photoUrl": "data/images/spb_pii_1.jpg",
+        "date": "2026-05-13"
+    },
+    {
+        "id": 105,
+        "type": "university",
+        "name": "ЛЭТИ",
+        "city": "Санкт-Петербург",
+        "country": "Россия",
+        "lat": 59.973065,
+        "lng": 30.324310,
+        "comment": "Повторная оккупация ЛЭТИ",
+        "photoUrl": "data/images/spb_leti_1.jpg",
+        "date": "2026-05-13"
+    },
+    {
+        "id": 106,
+        "type": "university",
+        "name": "МТИ",
+        "city": "Санкт-Петербург",
+        "country": "Россия",
+        "lat": 59.933030,
+        "lng": 30.347447,
+        "comment": "",
+        "photoUrl": "data/images/spb_mti_1.jpg",
+        "date": "2026-05-13"
     }
 ]
