@@ -1270,5 +1270,77 @@
         "comment": "",
         "photoUrl": "data/images/spb_mti_1.jpg",
         "date": "2026-05-13"
+    },
+    {
+        "id": 107,
+        "type": "university",
+        "name": "СпбгХПА",
+        "city": "Санкт-Петербург",
+        "country": "Россия",
+        "lat": 59.943613,
+        "lng": 30.340768,
+        "comment": "",
+        "photoUrl": "data/images/spb_spbghpa_1.jpg",
+        "date": "2026-05-13"
+    },
+    {
+        "id": 108,
+        "type": "university",
+        "name": "РГИСИ",
+        "city": "Санкт-Петербург",
+        "country": "Россия",
+        "lat": 59.940582,
+        "lng": 30.344029,
+        "comment": "",
+        "photoUrl": "data/images/spb_rgisi_1.jpg",
+        "date": "2026-05-13"
+    },
+    {
+        "id": 109,
+        "type": "university",
+        "name": "ВХУТЕИН",
+        "city": "Санкт-Петербург",
+        "country": "Россия",
+        "lat": 59.939561,
+        "lng": 30.345302,
+        "comment": "",
+        "photoUrl": "data/images/spb_whutein_1.jpg",
+        "date": "2026-05-13"
+    },
+    {
+        "id": 110,
+        "type": "university",
+        "name": "СПБЮИ",
+        "city": "Санкт-Петербург",
+        "country": "Россия",
+        "lat": 59.937997,
+        "lng": 30.348503,
+        "comment": "",
+        "photoUrl": "data/images/spb_spbui_1.jpg",
+        "date": "2026-05-13"
+    },
+    {
+        "id": 111,
+        "type": "university",
+        "name": "СПбГУГА, авиационно-транспортный колледж",
+        "city": "Санкт-Петербург",
+        "country": "Россия",
+        "lat": 59.937087,
+        "lng": 30.348638,
+        "comment": "",
+        "photoUrl": "data/images/spb_spbgua_1.jpg",
+        "date": "2026-05-13"
+    },
+    {
+        "id": 112,
+        "type": "university",
+        "name": "Санкт-Петербургское суворовское военное училище МВД России",
+        "city": "Санкт-Петербург",
+        "country": "Россия",
+        "lat": 59.937087,
+        "lng": 30.348638,
+        "comment": "",
+        "photoUrl": "data/images/spb_spbswu_1.jpg",
+        "date": "2026-05-13"
     }
 ]
